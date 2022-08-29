@@ -1,0 +1,108 @@
+
+:root {
+  --magenta : rgba(238, 29, 82, 0.9);
+  --disabledMagenta: rgba(238, 29, 82, 0.4);
+  --cyan : rgb(105, 201, 208);
+}
+
+document.getElementById("hbi1Unloved").style.display = "inline";
+document.getElementById("hbi1Loved").style.display = "none";
+
+document.getElementById("hbi2Unloved").style.display = "inline";
+document.getElementById("hbi2Loved").style.display = "none";
+
+/* Step 4 Code
+First Initialize unfilled hearts visible and filled hearts as hidden */
+#hbi1Unloved { display: inline;}
+#hbi1Loved { display: none;}
+#hbi2Unloved { display: inline;}
+#hbi2Loved { display: none;}
+
+.gameHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#nname1, #nname2{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  color: whitesmoke;
+}
+
+main {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.videoContainer {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 35%
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videoControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reload,.heart {
+  margin: 20px;
+}
+
+.unloved {
+  color: rgb(180,180,180);
+}
+
+.liked {
+  color: var(--magenta);
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+@media screen and (max-width:750px) {
+
+  main {
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+  div.headerRight {
+      width: 30%;
+      justify-content: center;
+    }
+
+  footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+  
+}
+
